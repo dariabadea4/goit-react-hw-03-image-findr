@@ -6,7 +6,7 @@ import Modal from './Modal';
 import Button from './Button';
 import ImageGallery from './ImageGallery';
 import Loader from './Loader';
-
+import Error from './Error';
 
 export class App extends Component {
   state = {
@@ -31,13 +31,13 @@ export class App extends Component {
       search,
       currentPage,
       totalPage,
-      
+      error,
     } = this.state;
     const { changeStateCallback } = this;
     return (
       <AppWrap>
         <Searchbar onSubmit={changeStateCallback} />
-    
+        {error && <Error message={error.message} />}
         <ImageGallery
           changeStateCallback={changeStateCallback}
           search={search}
