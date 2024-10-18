@@ -2,7 +2,7 @@ import { ImageGalleryList } from './ImageGallery.styled';
 import ImageGalleryItem from 'components/ImageGalleryItem';
 import { Component } from 'react';
 import PropTypes from 'prop-types';
-import { perPage, imagesApi } from 'services/api';
+import { perPage, imagesApi } from '../api';
 
 class ImageGallery extends Component {
   state = {
