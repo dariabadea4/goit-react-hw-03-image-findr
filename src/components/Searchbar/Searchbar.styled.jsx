@@ -23,7 +23,7 @@ export const SearchForm = styled.form`
   align-items: center;
   width: 100%;
   max-width: 600px;
-  background-color: #fff;
+  background-color: white;
   border-radius: 3px;
   overflow: hidden;
 `;
